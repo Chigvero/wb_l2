@@ -1,0 +1,7 @@
+DatabaseURL=localhost:8080/mydb
+CasheSize=0
+LogLevel=
+Host=
+Port=0
+UserName=Builder
+Password=I_am_building_your_object
