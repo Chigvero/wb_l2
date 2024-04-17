@@ -94,21 +94,21 @@ func (f *FileFacade) RemoveFile(filePath string) error {
 func main() {
 	file := FileFacade{}
 
-	read, err := file.ReadFile("/home/andy/forLinux")
+	read, err := file.ReadFile("/home/Chigvero/forLinux")
 	if err != nil {
 		panic(err)
 	}
 	fmt.Println(string(read))
 
-	err = file.CopyFile("/home/andy/forLinux", "/home/andy/newwFile.txt")
+	err = file.CopyFile("/home/Chigvero/forLinux", "/home/Chigvero/newwFile.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = file.WriteFile("/home/andy/newwFile.txt", []byte("/home/andy/newwFile.txt"))
+	err = file.WriteFile("/home/Chigvero/newwFile.txt", []byte("/home/Chigvero/newwFile.txt"))
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = file.RemoveFile("/home/andy/newwFile.txt")
+	err = file.RemoveFile("/home/Chigvero/newwFile.txt")
 }
